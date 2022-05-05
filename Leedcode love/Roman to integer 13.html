@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Roman to integer 13.html</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		let a = 'XXI'
+
+let price = 0;
+
+for (let i = 0; i < a.length; i++) {
+	if ("I" == a[i]) {
+		price += 1
+	}
+
+
+	if ("I" == a[i] && "V" == a[i+1]) {
+		price += -2
+	}
+
+
+	if ("V" == a[i]) {
+		price += 5
+	}
+
+
+	if ("X" == a[i]) {
+		price += 10
+	}
+
+
+	if ("I" == a[i] && "X" == a[i+1]) {
+		price += -2
+	}
+
+
+	if ("L" == a[i]) {
+		price += 50
+	}
+
+
+	if ("X" == a[i] && "L" == a[i+1]) {
+		price += -20
+	}
+
+
+	if ("C" == a[i]) {
+		price += 100
+	}
+
+
+	if ("X" == a[i] && "C" == a[i+1]) {
+		price += -20
+	}
+
+
+
+	if ("D" == a[i]) {
+		price += 500
+	}
+
+
+	if ("C" == a[i] && "D" == a[i+1]) {
+		price += -20
+	}
+
+
+	if ("M" == a[i]) {
+		price += 1000
+	}
+
+
+	if ("C" == a[i] && "M" == a[i+1]) {
+		price += -200
+	}
+
+}
+
+alert(price)
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11dom metod code js.html</title>
+    <style type="text/css">
+
+        input {
+            height: 23px;
+            border-radius: 7px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <input type="text" id="input" placeholder="text">
+
+    <input type="text" id="input2" placeholder="img">
+    
+    
+    <button onclick="hinata()" style="width: 100px;background-color: orange;border-radius: 5px;font-size: 20px;">pass</button>
+
+    <div>
+        <ol>
+
+        </ol>
+    </div>
+
+    <script type="text/javascript">
+
+
+        let a = [];
+
+        let input = document.getElementById('input')
+
+        let input2 = document.getElementById('input2')        
+
+        function hinata() {
+
+            a.push({text: input.value, img:input2.value})
+            input.value = ''
+            input2.value = ''
+            console.log(a)
+
+        }
+
+
+
+        // let a = [];
+
+        // let input = document.getElementById('input')
+
+        // let ol = document.getElementsByTagName('ol')
+
+        //     function hinata() {
+
+        //         a.push(input.value)
+        //         input.value = ''
+        //         console.log(a)
+        //         ol[0].innerHTML = '';
+
+
+        //         // for (let i = 0; i < a.length; i++) {
+        //         //     if (i % 2 == 0 ) {
+        //         //         ol[0].innerHTML += `<li style="color: red">${a[i]}</li>`
+        //         //     }else {
+        //         //         ol[0].innerHTML += `<li style="color: green">${a[i]}</li>`
+        //         //     }
+        //         // }
+
+        //         a.map((e,i) => {
+        //             i % 2 == 0 ? ol[0].innerHTML += `<li style="color: red">${a[i]}</li>`
+        //             : ol[0].innerHTML += `<li style="color: green">${a[i]}</li>`
+                    
+        //         })
+        //     }
+
+
+
+        // let a = [];
+
+        // let v = {key:'voleybol'}
+
+        // function hinata() {
+        
+        //     a.push(v)
+
+        //     console.log(a)
+        // }
+
+
+
+        // let a = [];
+
+        //     function hinata() {
+        //         let b = prompt('text')
+        //         a.push(b)
+        //         console.log(a)
+        //     }
+            
+    </script>
+</body>
+</html>

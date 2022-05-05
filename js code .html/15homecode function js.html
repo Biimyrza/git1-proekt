@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>15homecode function js.html</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		
+
+		function oma (num, e = 'error') {
+			let b = 0;
+			for (let i = 0; i <= num; i++) {
+				if (e == 'chet' && i % 2 == 0) {
+					b += i
+			    } else if (e == 'ne chet' && i % 2 == 1) {
+					b += i
+			    }else if (e == 'error'){
+			    	console.log('error')
+			    }
+			}
+		console.log(b);
+		}
+
+oma(10, 'chet');
+oma(10, 'ne chet')
+
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>

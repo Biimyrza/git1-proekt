@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plus One 66.html</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+
+        let array = [5, 9, 9 ]
+
+        let array2 = []
+
+        let str = '';
+
+        let ff =true
+
+        array.map((e,i) => {
+            str += e
+        })
+        
+        for (let i = str.length - 1; i >= 0; i--) {
+            if (str[i] == '9') {
+                array2.push(0)
+            }else if (ff) {
+                ff = false
+                array2.push(+str[i] + 1)
+            }else {
+                array2.push(+str[i])
+                
+            }
+        }
+        let dd = [] 
+        for (let u = array2.length-1; u >= 0; u--) {
+            dd.push(array2[u])
+        }
+        console.log(dd)
+       
+    </script>
+    
+</body>
+</html>

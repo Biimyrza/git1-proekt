@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4dom oninput homecode js.html</title>
+    <style type="text/css">
+        .div1 {
+            border: 1px solid black;
+            width: 400px;
+            height: 350px;
+            border-radius: 15px;
+            position: absolute;
+            left: 430px;
+            top: 130px;
+            background-color: rgb(216, 220, 213);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <div style="text-align: center;">
+            <h1 style="color: rgb(90, 90, 136);margin-top: 30px;" >Если можешь взломай</h1>
+    <input type="text" id="inpt" placeholder="login"style="font-size: 20px;border-radius: 10px;margin-top: 30px;height: 40px;"> 
+        </div>
+        <div  style="text-align: center;margin-top: 30px;">
+    <input id="inpt2" type="password" placeholder="password"style="font-size: 20px;border-radius: 10px;height: 40px;">
+        </div>
+        <div  style="text-align: center;">
+    <button id="but" onclick="arsen1()" disabled style="font-size: 20px;border-radius: 10px;margin-top: 20px;width: 200px;height: 30px;">Pass</button>
+        </div>
+    </div>
+    <div id="div" style="text-align: center;font-size: 50px;color: orange;"></div>
+
+    <div id="div"></div>
+    
+        <input id="chec" value="grey" type="checkbox"> 
+        <label for="chec" style="transition: 1s;" id="spa">Tёмный режим</label>
+
+        <input id="chec1" value="yellow" type="checkbox"> 
+        <label for="chec1" style="transition: 1s;" id="spa1">yellow</label>
+
+        <input id="chec2" value="red" type="checkbox"> 
+        <label for="chec2" style="transition: 1s;" id="spa2">red</label>
+   
+   
+
+    <script type="text/javascript">
+        
+        let body_ = document.body
+        
+        chec.onclick = (e) => {
+            if (e.target.checked == true) {
+                body_.style.backgroundColor = 'grey'
+                body_.style.transition = '1s'
+                spa.style.color = 'white'
+                chec1.checked = false;
+                chec2.checked = false;
+            }else {
+                body_.style.backgroundColor = ''
+                spa.style.color = 'black'
+            }
+            
+        }
+        chec1.onclick = (e1) => {
+            if (e1.target.checked) {
+                body_.style.backgroundColor = 'yellow'
+                body_.style.transition = '1s'
+                spa1.style.color = 'blue'
+                chec.checked = false;
+                chec2.checked = false;
+            }else {
+                body_.style.backgroundColor = ''
+                spa1.style.color = 'black'
+            }
+            
+        }
+        chec2.onclick = (e2) => {
+            if (e2.target.checked) {
+                body_.style.backgroundColor = 'red'
+                body_.style.transition = '1s'
+                spa2.style.color = 'white'
+                chec.checked = false;
+                chec1.checked = false;
+            }else {
+                body_.style.backgroundColor = ''
+                spa2.style.color = 'black'
+            }
+            
+        }
+
+        let div = document.getElementById('div')
+
+        let a = [
+            {log: 'asan',
+            pass: '1234',
+            },
+            {log: 'arsen',
+            pass: '12345',
+            },
+            {log: 'usan',
+            pass: '123456',
+            },
+        ];
+    
+        let input = document.getElementById('inpt')
+
+        let input2 = document.getElementById('inpt2')
+
+        let button = document.getElementById('but')
+
+
+        input.oninput = function(){
+            if (input.value.length != '' && input2.value.length != '' ) {
+                button.disabled = false
+            } else {
+                button.disabled = true
+            }
+        } 
+        input2.oninput = function(){
+            if (input.value.length != '' && input2.value.length != '') {
+                button.disabled = false
+            } else {
+                button.disabled = true
+            }
+        }  
+        function arsen1() {
+            for (let i = 0; i < a.length; i++) {
+                if (input.value == a[i].log  && input2.value == a[i].pass) {
+                    div.innerHTML += 'hello arsen'
+                    i += a.length;
+                } else{
+                    div.innerHTML  = ''
+                }
+            }
+        }
+
+
+    </script>
+</body>
+</html>

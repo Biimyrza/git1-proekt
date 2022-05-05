@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5dom onkeydown homecode js.html</title>
+    <style type="text/css">
+        .div{
+            border: 2px solid black;
+            width: 500px;
+            height: 500px;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="div">
+        <div id="div" style="width: 100px;height: 100px;background-color: orange;position: relative;overflow: hidden;"></div>
+        </div>
+        
+
+    <script type="text/javascript">
+
+        let body1 = document.body
+
+        let div = document.getElementById('div')
+
+        let top1 = 0;
+        let right1 = 0;
+        let left1 = 0;
+        let bottom1 = 0;
+
+         body1.onkeydown = (arsen) => {
+           if (arsen.keyCode == 40) {
+            div.style.top = `${top1 += 10}px`
+           }if (arsen.keyCode == 39) {
+            div.style.left = `${left1 +=10}px`
+           }if (arsen.keyCode == 38) {
+            div.style.top = `${top1 -= 10}px`
+           }if (arsen.keyCode == 37) {
+            div.style.left = `${left1 -=10}px`
+           }
+           if (top1 == 500) {
+               top1 = -100
+           }else if (top1 == -100) {
+               top1 = 500
+           }
+           if (left1 == 500) {
+               left1 = -100
+           }else if (left1 == -100) {
+               left1 = 500
+           }
+        }
+    </script>
+</body>
+</html>

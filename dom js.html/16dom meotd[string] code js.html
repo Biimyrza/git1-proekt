@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16dom meotd[string] code js.html</title>
+    <style type="text/css">
+        .div0 {
+            background-color: grey;
+            width: 68%;
+            height: auto;
+            position: fixed;
+            z-index: 1;
+            padding: 10px;
+            padding-left: 400px;
+        }
+        .input {
+            width: 300px;
+            border-radius: 5px;
+            height: 10px;
+            padding: 10px;
+        }
+        .divjv {
+            width: 200px;
+            height: 300px;
+            border: 1px solid black;
+            box-shadow: 5px 5px 10px ;
+            margin-top: 60px;
+            margin-left: 50px;
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+           
+        }
+        .imgjv {
+            width: 200px;
+            height: 210px;
+        }
+        .h2 {
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .h3 {
+            margin-top: -5px;
+            margin-left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="div0" class="div0">
+        <input type="text" id="input" class="input" placeholder="Поиск ..">
+        <button style="height: 34px;border-radius: 10px;" onclick="add()">Поиск</button>
+    </div>
+    
+    <div id="div" style="display: flex; flex-wrap: wrap;"></div>
+
+
+    <script type="text/javascript">
+
+        // //INCLUDES 'string'
+
+        // let a = 'Быть или не быть вот в чём вопрос. ';
+
+        //     console.log(a.includes('Б')) // true
+        //     console.log(a.includes('a')) // false
+
+        // //------------------
+
+        let div = document.getElementById('div')
+
+        let mass = [
+            {
+                title: 'tesla 1',
+                price: '2 000 000',
+                img: 'https://icdn.lenta.ru/images/2020/11/27/18/20201127181833572/square_768_96d6a6bcc7cfafa1e53e0ee093e11f74.jpg',
+            },
+            {
+                title: 'tesla 2',
+                price: '3 000 000',
+                img: 'https://platfor.ma/images/doc/b/7/b7576d8-004.jpg',
+            },
+            {
+                title: 'tesla 3',
+                price: '4 000 000',
+                img: 'https://www.ixbt.com/img/n1/news/2022/0/1/5f6c5369ec05c4fe2700000f_large.jpg',
+            },
+            {
+                title: 'tesla 4',
+                price: '5 000 000',
+                img: 'https://icsb.org/wp-content/uploads/2020/04/Canva-Person-Typing-on-Laptop-Computer-Near-Mug-on-Glass-Table-scaled.jpg',
+            },
+            {
+                title: 'tesla 5',
+                price: '6 000 000',
+                img: 'https://motor.ru/imgs/2021/02/12/14/4510736/39446fb5ac3dfd5418b6dc8689d82d27374db5d5.jpg',
+            },
+            {
+                title: 'tesla 6',
+                price: '7 000 000',
+                img: 'https://cdnimg.rg.ru/img/content/224/53/71/54_d_850.jpg',
+            },
+            {
+                title: 'tesla 7',
+                price: '8 000 000',
+                img: 'https://cdn.motor1.com/images/mgl/4Vlgk/s1/4x3/tesla-model-x-first-drive.webp',
+            },
+            {
+                title: 'tesla 8',
+                price: '9 000 000',
+                img: 'https://electrek.co/wp-content/uploads/sites/3/2021/05/Tesla-Logo-Hero.jpg?quality=82&strip=all&w=1000',
+            },
+            {
+                title: 'tesla 9',
+                price: '10 000 000',
+                img: 'https://www.akchabar.kg/media/news/c10fd8f6-6d47-420f-be34-3ec569eff003.jpg',
+            },
+            {
+                title: 'tesla 10',
+                price: '11 000 000',
+                img: 'https://images11.popmeh.ru/upload/custom/d62/d62cadd2579e5ae83b5e136703a483ab.jpg',
+            },
+        ]
+
+        mass.map(e => {
+            div.innerHTML += `<div class="divjv">
+                    <img class="imgjv"/ src="${e.img}">
+                    <h2 class="h2">${e.title}</h2>
+                    <h2 class="h3">${e.price}</h2>                   
+                </div>`
+        });
+
+        let inp = document.getElementById('input')
+
+        function add() {
+            mass2 = mass.filter(asan => asan.title.includes(input.value))
+            input.value = ''
+            console.log(mass2)
+            div.innerHTML = ''
+
+            mass2.map(e => {
+            div.innerHTML += `<div class="divjv">
+                    <img class="imgjv"/ src="${e.img}">
+                    <h2 class="h2">${e.title}</h2>
+                    <h2 class="h3">${e.price}</h2>                   
+                </div>`
+        }); 
+           
+            
+        }
+
+
+    </script>
+</body>
+</html>

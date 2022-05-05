@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12dom metdody code js.html</title>
+    <style type="text/css">
+        .divi {
+            width: 300px;
+            height: 400px;
+            border: 2px solid orange;
+            box-shadow: 2px 2px 3px orange;
+            margin-top: 20px;
+            margin-left: 20px;
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        .img {
+            width: 300px;
+            height: 310px;
+        }
+        .h2 {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <input type="text" id="input">
+
+    <button onclick="arsen()">Ok</button>
+
+    <div id="div2" style="display: flex; flex-wrap: wrap;"></div>
+
+    <script type="text/javascript">
+
+        let a = [
+            {key: 'Tesla', img: 'https://avatars.mds.yandex.net/get-zen_doc/3842094/pub_5f8577048e35355ad17d705c_5f8579098e35355ad181d4a8/scale_1200'},
+            {key: 'Lexus', img: 'https://avatars.mds.yandex.net/get-zen_doc/1535103/pub_5fce6f97f825a12841f2fe7f_5fce72740a45a91cf4686e0a/scale_1200'},
+            {key: 'Mers', img: 'https://a.d-cd.net/f5caf9u-960.jpg'},
+            {key: 'Bmw', img: 'https://i.pinimg.com/originals/3d/af/26/3daf269ec1f0a49a5c487857199007ed.jpg'},
+            {key: 'Mers w124', img: 'https://a.d-cd.net/39d0c8ds-960.jpg'},
+        ]
+
+        function urmat() {
+            div2.innerHTML = '';
+            for (let i = 0; i < a.length; i++) {
+                div2.innerHTML += `<div class="divi">
+                        <img class="img" src="${a[i].img}"/>
+                        <h2 class="h2">${a[i].key}</h2>
+                    </div>`
+            }
+        }
+
+        urmat()
+
+        function arsen() {
+
+            a = a.filter(asan => input.value == '' ? true : asan.key == input.value)
+
+            input.value = ''
+            console.log(a)
+
+            urmat()
+        }
+
+
+    </script>
+
+
+</body>
+</html>

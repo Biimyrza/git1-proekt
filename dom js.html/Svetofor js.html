@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Svetofor js.html</title>
+    <style type="text/css">
+        .div0 {
+            background-color: black;
+            width: 150px;
+            height: 350px;
+            border-radius: 20px;
+            padding-top: 1px;
+        }
+        .red, .yellow, .green {
+            background-color: grey;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-top: 5px;
+            margin-left: 19px;
+            font-size: 85px;
+            color: white;
+            text-align: center;
+
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+
+    <div class="div0">
+
+        <div class="red" id="red">
+             
+        </div>
+        <div class="yellow" id="yellow">
+             0
+        </div>
+        <div class="green" id="green">
+             
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+
+        let divred = document.getElementById('red')
+        let divyellow = document.getElementById('yellow')
+        let divgreen = document.getElementById('green')
+
+        let num = 20
+        let numes = false;
+
+        const stop = setInterval(() => {
+
+            divyellow.innerHTML = `<div class="divst">${num--}</div>`
+            if (num == -1 ) {
+                num = 20 
+                numes = !numes
+            }
+            if (!numes && num > 5) {
+                divred.style.backgroundColor = 'red'
+                divyellow.style.backgroundColor = ''
+                divgreen.style.backgroundColor = ''
+
+            }
+            if (num < 5) {
+                divred.style.backgroundColor = ''
+                divyellow.style.backgroundColor = 'yellow'
+                divgreen.style.backgroundColor = ''
+            }
+            if (numes && num > 5) {
+                divred.style.backgroundColor = ''
+                divyellow.style.backgroundColor = ''
+                divgreen.style.backgroundColor = 'green'
+            }
+
+        },300)
+
+    </script>
+</body>
+</html>

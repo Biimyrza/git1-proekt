@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18dom Localstrech js.html</title>
+</head>
+<body>
+    
+    
+    <input id="input" type="text">
+
+    <button id="button" onclick="add()">Ok</button>
+    
+    <h1 id="h1_"></h1>
+
+    <input id="chec" value="grey" type="checkbox"> 
+    <label for="chec" style="transition: 1s;" id="spa">Tёмный режим</label>
+
+    <script type="text/javascript">
+
+        //LOCALSTORAGE
+
+        // localStorage.setItem('key', 'arsen hello') //Жонотот
+
+        // h1_.innerHTML = localStorage.getItem('key') //Чакырат
+
+        //-------------------------
+
+
+        let body_ = document.body
+        
+        chec.onclick = (e) => {
+            if (e.target.checked == true) {
+                localStorage.setItem('koy', 'grey')
+                body_.style.backgroundColor = 'grey'
+                body_.style.transition = '1s'
+                spa.style.color = 'white'
+            }else {
+                localStorage.setItem('koy','white')
+                body_.style.backgroundColor = ''
+                spa.style.color = 'black'
+            }
+        }
+
+        let a = localStorage.getItem('koy')
+
+        if ('grey' == a) {
+            body_.style.backgroundColor = 'grey'
+            chec.checked = true
+            spa.style.color = 'white'
+        } else {
+            body_.style.backgroundColor = ''
+        }
+
+        
+
+
+
+        let input = document.getElementById('input')
+
+        function add() {
+
+            localStorage.setItem('key', input.value)
+
+            h1_.innerHTML = localStorage.getItem('key')
+
+            input.value = ''
+        }
+        h1_.innerHTML = localStorage.getItem('key')
+
+
+
+
+
+    </script>
+
+</body>
+</html>

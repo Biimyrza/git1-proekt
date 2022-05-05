@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>3homecode js.html</title>
+</head>
+<body>
+
+	<script type="text/javascript"> 
+
+		let pin = +prompt('Pin cod jazynyz')
+
+		if(pin == 3456){
+			alert( 10000 + 'som bar' )
+			let akcha = +prompt( 'канча акча аласыз ?') 
+			
+			if( 10000 >= akcha ){
+				alert((10000 - akcha)-(5000*5/100) + 'som kaldy')
+			}else{
+				alert('sende ' + 10000 + 'som ele  bar')
+			}
+		}else{
+			alert('Сенин башын иштейби тура жаз')
+		} 
+ 
+	</script>
+
+</body>
+</html>

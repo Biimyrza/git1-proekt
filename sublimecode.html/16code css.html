@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>16code css.html</title>
+	<style type="text/css">
+		.img2 {
+			width: 150px;
+			height: 150px;
+			border-radius: 50%;
+			margin-left: 940px;
+			transition: 1s;
+			margin-top: 80px;
+			position: absolute;
+		}
+		.img2:hover {
+			transform: scale(2.2);
+		}
+		.img {
+			width: 300px;
+			height: 300px;
+			margin-left: 100px;
+			transition: 1s;
+			border-radius: 10px;
+		}
+		.img:hover {
+			transform: rotate(25deg);
+		}
+		.img1 {
+			width: 300px;
+			height: 300px;
+			margin-left: 100px;
+			transition: 1s;
+			border-radius: 5px;
+		}
+		.img1:hover {
+			transform: skew(35deg);
+		}
+		.div {
+			width: 1350px;
+			height: 50px;
+			background-color: grey;
+			font-size: 40px;
+			border-radius: 10px;
+			animation-name: ucon;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+		}
+		@keyframes ucon {
+			0%{
+				width: 0%;
+				background-color: red;
+			}
+			50%{
+				width: 100%;
+				background-color: green;
+			}
+			100%{
+				width: 0%;
+				background-color: yellow;
+			}
+		}
+		.div1 {
+			width: 270px;
+			height: 270px;
+			border-radius: 50%;
+			animation-name: arsen;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			margin-top: 10px;
+			margin-left: 200px;
+		}
+		@keyframes arsen {
+			0%{
+				transform: rotate(35deg);
+			}
+			50%{
+				transform: rotate(-35deg);
+			}
+			100%{
+				transform: rotate(35deg);
+			}
+
+		}
+	</style>
+</head>
+<body>
+		<img class="img2" src="https://images.wsj.net/im-473087?width=1280&size=1">
+		<img class="img" src="https://img.i-scmp.com/cdn-cgi/image/fit=contain,width=1098,format=auto/sites/default/files/styles/1200x800/public/images/methode/2018/02/28/f006c0ec-1b88-11e8-804d-87987865af94_1280x720_115503.jpg?itok=NqcWv_d8">
+		<img class="img1" src="https://1.bp.blogspot.com/-FEU417wW-so/YApcY8-tz1I/AAAAAAAALJ8/Ow58tt-kb8QhpTcaGmX-QOhUOwJiSRvIwCLcBGAsYHQ/w1200-h630-p-k-no-nu/Dua%2BLipa%2B2.jpg">
+
+	<div class="div">
+		Duo_Lipa 
+	</div>
+		<img class="div1" src="https://www.shareicon.net/data/2015/09/17/102347_css3_512x512.png">
+</body>
+</html>

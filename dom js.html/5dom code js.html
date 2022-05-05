@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Passions+Conflict&family=Redressed&family=Shizuru&display=swap" rel="stylesheet">
+    <title>5dom code js.html</title>
+</head>
+<body>
+
+        <div id="div" style="text-align: center;font-size: 100px;color:grey;margin-top: 20%;"></div>
+
+        <button id="ar" onclick="name_()" style="font-size: 30px;background-color: green;color: white;border-radius:30px;position: absolute;bottom: 10px;left: 10px;">Srift</button>
+
+        <button  id="br" onclick="name1()" style="font-size: 30px;background-color: green;color: white;border-radius:30px;position: absolute;bottom: 10px;right: 10px;">Pass</button>
+
+    <script type="text/javascript">
+
+            let q = prompt('vord DOM')
+
+            let div = document.getElementById('div')
+
+            div.innerHTML = q
+
+            let ar = document.getElementById('ar')
+
+            let w = [" 'Gideon Roman', cursive", " 'Redressed', cursive" , " 'Shizuru', cursive", " 'Passions Conflict', cursive", ]
+
+            let e = 0;
+            function name_() {
+               div.style.fontFamily = w[e]
+               ar.innerHTML = w[e]
+            
+             e >= w.length - 1 ? e = 0: e++;
+            }
+
+            let br = document.getElementById('br')
+
+            let b = ['red','blue','yellow','orange','wheat']
+
+            let v = 0;
+            function name1() {
+                document.body.style.backgroundColor = b[v]
+                br.innerHTML = b[v]
+            
+             v >= b.length - 1 ? v = 0: v++
+            }
+
+
+
+
+        // let a = document.getElementById('div')
+
+        // let b = ['asan', 'uson','arsen' ]
+
+        // let v = 0;
+        // function name1() {
+        //     a.innerHTML = b[v]
+            
+        //     v >= b.length - 1 ? v = 0: v++
+        // }
+
+
+
+    </script>
+</body>
+</html>

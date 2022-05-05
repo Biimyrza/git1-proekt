@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>14home code js.html</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		let e = prompt('parol karty ?')
+
+		let a = [
+			{pas:1010, price:1000},
+			{pas:2020, price:2000},
+			{pas:3030, price:3000},
+			{pas:4040, price:4000},
+		]
+		for (let i = 0; i < a.length; i++) {
+			if (e == a[i].pas) {
+				alert(a[i].pas = a[i].price)
+				let q = +prompt('skolka money hotite')
+					if (a[i].price >= q) {
+						alert(a[i].price - q + ' com u vas ostalos')
+				}else if (q > a[i].price) {
+					alert('Koy uka koy')
+				}i = a.length
+			}else if (i == a.length - 1) {
+				alert('dont parol')
+			}
+			
+		}
+	</script>	
+</body>
+</html>

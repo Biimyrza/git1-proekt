@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6dom input code js.html</title>
+    <style type="text/css">
+        .but {
+            background-color: orange;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <input id="input2" type="text" name="поиск">
+
+    <input id="input" type="text" name="поиск">
+
+    <button id="button" class="but" onclick="name1()" >Pass</button>
+
+    <ol id="li"></ol>
+
+    <script type="text/javascript">
+
+
+        let input = document.getElementById('input')
+
+        let input2 = document.getElementById('input2')
+
+        let li = document.getElementById('li') 
+
+        function name1() {
+            li.innerHTML += `<ul>${input.value*input2.value}</ul>`;
+            input.value = '';
+            input2.value = '';
+
+
+        }
+
+
+
+    
+        // // backgroundColor
+
+        // function name1() {
+        //     document.body.style.backgroundColor = input.value;
+        //     input.value = '';
+
+
+        // }
+
+
+
+
+    // let input = document.getElementById('input')
+
+    // let li = document.getElementById('li') 
+
+    // function name1() {
+    //     if (input.value == 'Sadyr') {
+    //         li.innerHTML = `<li>${'Prezident KR'}</li>`;
+    //         input.value = '';
+    //     } else if (input.value == 'Putin') {
+    //         li.innerHTML = `<li>${'Prezident Russia'}</li>`;
+    //         input.value = '';
+    //     } else if (input.value == 'Shavkat') {
+    //         li.innerHTML = `<li>${'Prezident uz'}</li>`;
+    //         input.value = '';
+    //     } else {
+    //         li.innerHTML = `<li>${'Koy uka koy'}</li>`;
+    //     }
+    // }
+
+
+
+
+        // let input = document.getElementById('input')
+
+        // let li = document.getElementById('li') 
+
+        // function name1() {
+        //     li.innerHTML += `<li>${input.value}</li>`;
+        //     input.value = '';
+
+
+        // }
+
+
+    </script>
+</body>
+</html>

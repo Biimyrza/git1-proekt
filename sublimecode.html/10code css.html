@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>10code css.html</title>
+	<style type="text/css">
+		h2 {
+			text-shadow:-7px -5px 5px grey;
+			text-align: center;
+			font-size: 20px;
+		}
+		.box {
+			width: 300px;
+			height: 300px;
+			box-shadow: 2px 2px 2px black;
+			transition: 4s;
+		}
+		.box:hover {
+			border-radius: 50%;
+			box-shadow: 3px 3px 4px white;
+			background-color: black;
+			color: white;
+		}
+		.div1 {
+			width: 200px;
+			height: 70px;
+			background-color: blue;
+			border-radius: 10px;
+			transition: 2s;	
+			cursor: progress;
+		}
+		.div1:hover {
+			background-color: rgb(97, 227, 223);
+			border-radius: 30px;
+		}
+		.div2 {
+			font-size: 60px;
+			transition: 3s;
+			width: 100px;
+			cursor: wait;
+		}
+		.div2:hover {
+		    background-color: blue;
+		    border-radius: 10px;
+		    width: 1350px;
+		}
+	</style>	 	
+</head>
+<body>
+	<div>
+	  <div class="box">
+		<h2>shadow box</h2>
+	  </div>
+    <button class="div1">
+		<div>
+			<h2>close</h2>
+		</div>
+    </button>
+    <div class="div2">
+    	close
+    </div>
+</body>
+</html>

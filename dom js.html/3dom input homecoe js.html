@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3dom input homecoe js.html</title>
+    <style type="text/css">
+        .but {
+            background-color: orange;
+            border-radius: 10px;
+            font-size: 20px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <input id="input2" type="number" name="поиск">
+
+    <input id="input" type="number" name="поиск">
+
+    <button id="button" class="but" onclick="name_()" >+</button>
+    <button id="button1" class="but" onclick="name1()" >-</button>
+    <button id="button2" class="but" onclick="name2()" >*</button>
+    <button id="butto3" class="but" onclick="name3()" >/</button>
+
+    <ol id="li"></ol>
+
+    <script type="text/javascript">
+
+
+        let input = document.getElementById('input')
+
+        let input2 = document.getElementById('input2')
+
+        let li = document.getElementById('li') 
+
+        let button2 = document.getElementById('button2')
+
+        function name2() {
+                li.innerHTML += `<ul>${input.value*input2.value}</ul>`;
+                input.value = '';
+                input2.value = '';
+
+        }
+        function name1() {
+                li.innerHTML += `<ul>${input2.value-input.value}</ul>`;
+                input.value = '';
+                input2.value = '';
+
+        }
+        function name_() {
+                li.innerHTML += `<ul>${+input2.value + +input.value}</ul>`;
+                input.value = '';
+                input2.value = '';
+
+        }
+        function name3() {
+                li.innerHTML += `<ul>${input2.value/input.value}</ul>`;
+                input.value = '';
+                input2.value = '';
+
+        }
+    </script>
+</body>
+</html>

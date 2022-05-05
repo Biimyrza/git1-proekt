@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17dom code js.html</title>
+    <style type="text/css">
+
+        .but {
+            background-color: white;
+            margin-left: -15px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            font-size: 20px;
+        }
+        .inp {
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+            background-color: white;
+            font-size: 20px;
+
+        }
+
+
+    </style>
+</head>
+<body style="background-color: rgb(221, 221, 221);">
+
+    <div style="text-align: center; margin-top: 300px;">
+    <input  class="inp" type="password" id="input">
+
+    <button class="but" id="button" onclick="arsen1()">смотреть</button>
+    </div>
+
+    <script type="text/javascript">
+
+        let input = document.getElementById('input')
+
+        let button = document.getElementById('button')
+
+        let div = document.getElementById('div')
+
+        let body_ = document.body
+
+        function arsen1() {
+            if (button.innerHTML === 'смотреть') {
+                button.innerHTML = 'закрыть'
+                input.type = 'text'
+            } else {
+                button.innerHTML = 'смотреть'
+                input.type = 'password'
+                
+            }
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>

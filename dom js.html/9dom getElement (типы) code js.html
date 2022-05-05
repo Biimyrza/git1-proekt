@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9dom getElement типы code js.html</title>
+</head>
+<body>
+    <div id="div"></div>
+    <h1 id="h1"></h1>
+
+    <div>Правилно :</div>
+
+    <div>Не равилно :</div>
+
+    <script type="text/javascript">
+
+    const TEXT = prompt('text')
+
+    const ELEMENT = document.getElementsByTagName('span')
+
+    let index = 0;
+
+    const kaga = document.getElementsByTagName('div')
+
+    let hin = 1;
+    let g = 1;
+    
+    for (let i = 0; i < TEXT.length; i++) {
+        h1.innerHTML += `<span>${TEXT[i]}</span>`
+    }
+    document.body.onkeypress = (toby) => {
+        if (ELEMENT[index].innerHTML == toby.key) {
+            ELEMENT[index].style.color = 'blue'
+            kaga[1].innerHTML = 'Правилно : ' + hin++
+        } else {
+            ELEMENT[index].style.color = 'red'
+            kaga[2].innerHTML = 'Не равилно : ' + g++
+        }
+        index++
+    }
+
+
+
+        // let body = document.body
+
+        // let div = document.getElementById('div')
+
+        // body.onkeypress = (hinata) => {
+        //     if (hinata.keyCode == 13) {
+        //         div.style.color = 'red'
+        //     } else {
+        //         div.innerHTML += hinata.key
+        //     }
+        // }
+
+
+    </script>
+</body>
+</html>

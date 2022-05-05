@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>12code css.html</title>
+	<style type="text/css">
+		.div1 {
+			width: 1340px;
+			height: 300px;
+			border: 3px solid green;
+			display: flex;
+		}
+		.div2 {
+			width: 350px;
+			height: 250px;
+			border: 2px solid blue;
+			margin-left: 30px;
+			margin-top: 20px;
+			position: absolute;
+			overflow: hidden;
+		}
+		.div2:hover>.div {
+			bottom: 10px;
+			right: 10px;
+			transform: rotate(360deg);
+		}
+		img {
+			width: 350px;
+			height: 250px;
+		}
+		.div2:hover>img {
+			width: 450px;
+			height: 300px;
+		}
+		.div {
+			border: 1px solid grey;
+			width: 200px;
+			background-color: bisque;
+			border-radius: 10px;
+			position: absolute;
+			bottom: -100px;
+			right: -100px;
+			overflow: hidden;
+			transition: 1s;
+		}
+		.div3 {
+			width: 350px;
+			height: 250px;
+			border: 2px solid blue;
+			margin-left: 400px;
+			margin-top: 20px;
+			position: absolute;
+			overflow: hidden;
+		}
+		.div3:hover>.div {
+			bottom: 10px;
+			right: 10px;
+			transform: rotate(360deg);
+		}
+		img {
+			width: 350px;
+			height: 250px;
+			transition: 2s;
+		}
+		.div3:hover>img {
+			width: 450px;
+			height: 300px;
+		}
+		.div {
+			border: 1px solid grey;
+			width: 200px;
+			background-color: bisque;
+			border-radius: 10px;
+			position: absolute;
+			bottom: -100px;
+			right: -100px;
+			overflow: hidden;
+			transition: 2s;
+		}
+	</style>
+</head>
+<body>
+	<h1 align="center">
+	  My favorite
+    </h1>
+	 <div class="div1">
+		<div class="div2">
+			<div class="div">Ду́а Ли́па (англ. и алб. Dua Lipa; род. 22 августа 1995) автор песен и модель</div>
+			 <img src="https://soundtimes.ru/images/pesni2/805.jpg">
+		</div>
+		<div class="div3">
+			<div class="div">Ки́мберли Ноэ́ль (Кардашья́н) американская звезда реалити-шоу, актриса, фотомодель.</div>
+			<img src="https://pagesix.com/wp-content/uploads/sites/3/2021/06/kendall-jenner-48.jpg?quality=80&strip=all&w=1200">
+		</div> 
+	 </div>
+</body>
+</html>

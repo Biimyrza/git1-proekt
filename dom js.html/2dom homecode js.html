@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2dom homecode js.html </title>
+</head>
+<body>
+    <button onclick="name1()" id="button" style="color: grey; font-size: 30px;padding-left: 30px;padding-right: 30px;">Добавить</button>
+
+    <div id="div" onclick="name1()" style="margin-top: 10px;"></div>    
+
+    <script type="text/javascript">
+
+        let button = document.getElementById('button')
+
+        let div = document.getElementById('div')
+
+
+        function name1() {
+            if (button.innerHTML == 'Удалить') {
+                button.innerHTML = 'Добавить'
+                div.innerHTML = '<img src="https://iphonewallpaperworld.com/wp-content/uploads/2020/07/Tesla-Wallpapers-iPhone-41.jpg" onclick="name1()" style="with:400px;height:400px;">'
+            } else {
+                button.innerHTML = 'Удалить'
+                div.innerHTML = ''
+            }
+        }
+        
+
+
+    </script>
+</body>
+</html>

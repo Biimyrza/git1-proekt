@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10dom code js.html</title>
+</head>
+<body>
+
+    <div id="div"></div>
+    <h1 id="h1"></h1>
+
+    <div>Туура: </div>
+
+    <div>Туура эмес : </div>
+
+    <script type="text/javascript">
+
+    const TEXT = 'hello voleybol'
+
+    const ELEMENT = document.getElementsByTagName('span')
+
+    let index = 0;
+
+    const kaga = document.getElementsByTagName('div')
+
+    let hin = 0;
+    let g = 0;
+    
+    for (let i = 0; i < TEXT.length; i++) {
+        h1.innerHTML += `<span>${TEXT[i]}</span>`
+    }
+    document.body.onkeydown = (toby) => {
+        if (toby.keyCode == 8 && index > 0) {
+                index-=1
+                if(ELEMENT[index].style.color == 'red'){
+                    kaga[2].innerHTML = `Туура эмес: ${--g}`
+                }else if(ELEMENT[index].style.color == 'green'){    
+                    kaga[1].innerHTML = `Туура: ${--hin},`
+                }
+                ELEMENT[index].style.color = 'black'
+                
+        }else {
+            if (ELEMENT[index].innerHTML == toby.key) {
+                ELEMENT[index].style.color = 'green'
+                kaga[1].innerHTML = `Туура: ${++hin},`
+            
+            } else {
+                ELEMENT[index].style.color = 'red'
+                kaga[2].innerHTML = `Туура эмес: ${++g}`
+            
+            }
+            index++
+        }    
+    }
+    </script>
+</body>
+</html>

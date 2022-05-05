@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2dom code js.html</title>
+</head>
+<body>
+
+
+	 <div id="arsen" style="display: flex;flex-wrap: wrap;"><h1 style="display: flex;flex-wrap: wrap;"></h1></div>
+
+
+	<script type="text/javascript">
+
+		let a = +prompt('Number ?')
+
+		let div = document.getElementById('arsen')
+
+		let	color = ['red', 'blue', 'yellow', 'green', 'grey']
+
+		for (let i = a; i > 0; i--) {
+				div.innerHTML += `<div style="font-size:70px;display: flex;
+					justify-content: center;width: 110px;height: 110px;
+					background-color: ${color[(i)%5]};border-radius:50%;align-items: center;color:white;margin:10px;">${[i]}</div>`
+		}
+		
+
+
+
+	</script>
+</body>
+</html>

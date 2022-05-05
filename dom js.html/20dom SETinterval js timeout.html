@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20dom SETinterval js timeout.html</title>
+</head>
+<body>
+    
+    <div style="text-align: center; font-size: 50px;" id="div">
+        00:00
+    </div>
+
+    <script type="text/javascript">
+
+        //SETtIMEOUT
+
+        // setTimeout(() => {
+        //     div.style.color = 'red'
+        // }, 3000)
+
+        //---------------- - -
+        
+        //svetBODY
+
+        // let ten = 10
+
+        // let body1 = document.body
+
+        // const stop = setInterval(() => {
+        //     div.innerHTML = `<div>${ten--}</div>`
+        //     if (ten == -1) {
+        //         ten = 10
+        //     }else if (ten == 8 ) {
+        //         body1.style.backgroundColor = 'red' 
+        //         div.style.color = 'black'
+        //     }else if (ten == 6) {
+        //         body1.style.backgroundColor = 'blue'
+        //     }else if (ten == 4) {
+        //         body1.style.backgroundColor = 'grey'
+        //     }else if (ten == 2) {
+        //         body1.style.backgroundColor = 'yellow'
+        //     }else if (ten == 0) {
+        //         body1.style.backgroundColor = 'black'
+        //         div.style.color = 'white'
+        //     }
+                       
+        // },500)
+
+        //-------------------
+
+        //Chass
+
+        let nul = 00
+
+        let min  = 00
+
+        let body1 = document.body
+        body1.style.backgroundColor = 'grey'
+
+        const stop = setInterval(() => {
+
+            div.innerHTML = `<div>${min > 9 ? min : '0' + min}:${nul > 9 ?  nul++ : '0' + nul++}</div>`
+            
+            if (nul == 60 ) {
+                min++
+                nul = 00
+            }      
+        },100)
+
+        //------------------
+
+
+
+
+
+    </script>
+</body>
+</html>

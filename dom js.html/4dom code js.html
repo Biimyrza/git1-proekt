@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4dom code js.html</title>
+    <style type="text/css">
+        .div{
+            display: flex;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="div" >
+    <button  id="button_" onclick="name_('+')" style="width: 100px;height: 100px;border-radius: 50px;font-size: 50px;background-color: blue;">+</button>
+    <button style="width: 100px;height: 100px;border-radius: 50px;font-size: 50px;background-color: grey"><div id="arsen">0</div></button>
+    <button  id="button_" onclick="name_('-')"  style="width: 100px;height: 100px;border-radius: 50px;font-size: 50px;background-color: red;">-</button>
+    </div>
+   
+    
+    <script type="text/javascript">
+
+
+    let button_ = document.getElementById('button_')
+
+    let div = document.getElementById('arsen')
+
+    let adyl = 0;
+    
+    function name_(a) {
+       if (a == '+') {
+           adyl+=1
+       } else if (adyl>0) {
+           adyl-=1
+       }
+        div.innerHTML = adyl
+    }
+
+
+
+
+
+
+
+        // let button_ = document.getElementById('button_')
+
+        // let div = document.getElementById('arsen')
+
+        // let adyl = 2022
+
+        // function name_() {
+        //     button_.style.backgroundColor = 'grey'
+        //     div.innerHTML += adyl
+        // 
+
+
+    </script>
+
+</body>
+</html>

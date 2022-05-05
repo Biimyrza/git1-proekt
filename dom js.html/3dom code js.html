@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>3dom code js.html</title> 
+	<style type ="text/css">
+		.arsen {
+			width: 300px;
+			height: 300px;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		.div{
+			border: 1px solid black;
+			border-radius: 10px;
+			width: 300px;
+			height: 400px;
+			overflow: hidden;
+		}
+		.qw {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.qa {
+			
+			background-color: green;
+			font-size: 20px;
+			border-radius: 10px;
+			margin-left: 150px;
+			margin-top: -10px;
+			color: white;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	
+	<div id="div" style="display: flex;flex-wrap: wrap;"></div>
+
+	<script type="text/javascript">
+
+		let div  = document.getElementById('div')
+
+		let r = [
+					{key:'https://carsweek.ru/upload/medialibrary/cc9/cc9940cd1ae9d4769c0d749702919102.jpg',
+					 	koy: 'Tesla Model S'},
+					{key:'https://www.zr.ru/d/story/20/545056/201305281316-201305281316-tesla-model_s_2013_1600x1200_wallpaper-3.jpg',
+						koy: 'Tesla Model C'},
+					{key:'https://carsweek.ru/upload/resize_cache/iblock/e22/1200_900_1/e229084cd1bea3cea2f5e24994f3eaf9.jpg',
+						koy: 'Tesla Model Y'}
+				]
+		for (let i = 0; i < r.length; i++) {
+			div.innerHTML += `<div class = "qw"><div class="div"> <img src = "${r[i].key}" class = 'arsen';/>
+								<h2>${r[i].koy}</h2>
+								<button class = "qa">Zakazat</button>
+							</div>
+						</div>`
+		}
+		
+
+
+// let body = document.body
+
+// 	let a = prompt('Color')	
+
+// 		switch (a) {
+// 			case 'сары':body.style.backgroundColor = 'yellow'
+// 				break;
+// 			case 'кызыл':body.style.backgroundColor = 'red'
+// 				break;	
+// 			case 'кара':body.style.backgroundColor = 'black'
+// 				break;
+// 			case 'кок':body.style.backgroundColor = 'blue'
+// 				break;
+// 			case 'жашыл':body.style.backgroundColor = 'green'
+// 				break;
+
+// 			default: alert('кой ука кой')				
+// 		}
+
+	</script>
+
+</body>
+</html>

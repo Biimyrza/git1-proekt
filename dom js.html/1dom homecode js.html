@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>1dom homecode js.html</title>
+</head>
+
+<body>
+
+	<div id="arsen" style="display: flex;flex-wrap: wrap;">
+		<h1 style="display: flex;flex-wrap: wrap;"></h1>
+	</div>
+
+	<script type="text/javascript">
+
+		let a = +prompt('Number ?')
+
+		let div = document.getElementById('arsen')
+
+		let color = ['red', 'blue', 'yellow', 'green', 'grey']
+
+		let w = ['rgba(1, 5, 146)', 'rgba(151, 144, 8)', 'rgba(176, 12, 179)', 'rgba(255, 195, 0)', 'rgba(144, 15, 63)']
+
+		for (let i = 1; i <= a; i++) {	
+			div.innerHTML += `<div style="font-size:70px;display: flex;
+					justify-content: center;width: 110px;height: 110px;
+					background-color: ${color[(i) % 4]};border-radius:50%;align-items: center;color:white;margin:10px;">${[i]}</div>`
+
+			div.innerHTML += `<div style="font-size:70px;display: flex;
+					justify-content: center;width: 110px;height: 110px;
+					background-color: ${w[(i) % 3]};border-radius:10px;align-items: center;color:white;margin:10px;">${[i]}</div>`
+		}
+	</script>
+</body>
+</html>

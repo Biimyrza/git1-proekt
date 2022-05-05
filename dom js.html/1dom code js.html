@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>1dom code js.html</title>
+</head>
+<body>
+
+	<div id="arsen" style="font-size: 50px; text-align: center;color: blue;"></div>
+
+	<script type="text/javascript">
+
+
+		let div = document.getElementById('arsen')
+
+		let a = prompt('pishi braat')
+
+		for (let i=0; i < a.length; i++) {
+			if (i%2 == 0) {
+				div.innerHTML += `<a style = 'color:red'>${a[i]}</a>`
+			}else {
+				div.innerHTML += `<a style = 'color:blue'>${a[i]}</a>`
+			}
+		}
+
+
+
+
+		// let div = document.getElementById('arsen')
+
+		// for (let i=0; i < 4; i++) {
+		// 	if (i%2 == 0) {
+		// 		div.innerHTML += "<s style = 'color:red'> Arsen </s>"
+		// 	}else {
+		// 		div.innerHTML += "<a style = 'color:blue'> Arsen </a>"
+		// 	}
+		// }
+
+
+		
+		// let b = prompt('svet body')
+
+		// let body = document.body
+
+		// body.style.backgroundColor = b
+
+		// let a = prompt('svet elementa')
+
+		// console.log(document.getElementById('arsen'))
+
+		// arsen.style.color = a
+
+
+
+
+		// let a = confirm('????')
+
+		// if (a === true) {
+		// 	arsen.style.fontSize = '150px'
+		// }else{
+		// 	arsen.style.fontSize = '50px'
+		// }
+
+
+
+		// let div = document.getElementById('arsen')
+
+		// div.innerHTML += ' Hi DOM'
+
+		// console.log(div.innerHTML[1])
+
+
+
+		// let div = document.getElementById('arsen')
+
+		// let a = prompt('pishi')
+
+		// 	 div.innerHTML = a
+
+
+	</script>
+
+</body>
+</html>
